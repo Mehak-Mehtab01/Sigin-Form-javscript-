@@ -1,0 +1,85 @@
+/* Resetting margins and padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the form */
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #3D2B1F, #825B32); /* Dark brown to earthy brown gradient */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Styling the container */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 360px;
+    z-index: 1; /* Ensures the container is above the background */
+}
+
+/* Styling the heading */
+h2 {
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: rgb(150, 98, 31);
+}
+
+/* Styling inputs */
+input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: rgb(150, 98, 31);
+    box-shadow: 0 0 5px rgba(150, 98, 31, 0.5);
+}
+
+/* Styling buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(150, 98, 31);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(244, 175, 104);
+}
+
+/* Output message */
+#output {
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgb(150, 98, 31);
+}
